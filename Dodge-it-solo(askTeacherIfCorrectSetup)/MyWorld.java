@@ -19,16 +19,16 @@ public class MyWorld extends World
         super(600, 400, 1); 
         
         Hero hero1 = new Hero();
-<<<<<<< Updated upstream
+
         addObject(hero1, 90, 67);
         
         Monster monster67 = new Monster();
         addObject(monster67, 67, 67);
-=======
+
         addObject(hero1, 350, 250);
         
         Monster monster1 = new Monster();
         addObject(monster1, 67, 41);
->>>>>>> Stashed changes
+
     }
 }
