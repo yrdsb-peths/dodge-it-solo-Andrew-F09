@@ -21,9 +21,15 @@ public class Hero extends Actor
        }
        
        if(atTop){
+<<<<<<< Updated upstream
            setLocation(100,250);
         } else {
             setLocation(300,400);
+=======
+           setLocation(350,250);
+        } else {
+            setLocation(67,41);
+>>>>>>> Stashed changes
         }
     }
         
