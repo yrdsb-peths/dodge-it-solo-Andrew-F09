@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class hero here.
- * 
- * Andrew (your name) 
- * 0.0.1 (a version number or a date)
+ * Description: The player's character, purpose is to not touch the moving
+ monster, if it happens, the game will end and player will be teleported to
+ spawn.
+ 
+ * @author: Andrew Fok
+ * @Version:Final 
  */
 public class Hero extends Actor
 {
@@ -16,6 +18,7 @@ public class Hero extends Actor
     public void act()
     {
        //Add your action code here.
+       // Hero will move places after being clicked
        if(Greenfoot.mouseClicked(null)){
           atTop =!atTop;
         }
@@ -28,6 +31,7 @@ public class Hero extends Actor
 
         }
         
+        //hero will be sent to spawn and the monster will dissapear, game over
         if(isTouching(Monster.class))
         {
             removeTouching(Monster.class);

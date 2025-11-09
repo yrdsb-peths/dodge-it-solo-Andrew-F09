@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class lose here.
+ * Description: taunt symbol to induce rage in the player.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Andrew Fok
+ * @Version : Final
  */
 public class YouLose extends Actor
 {
@@ -17,6 +17,7 @@ public class YouLose extends Actor
         
     }
     
+    //scales to needed size
     public YouLose()
     {
         GreenfootImage img = getImage();

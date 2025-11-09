@@ -1,14 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
-<<<<<<< Updated upstream
- * Write a description of class monster here.
-=======
- * Write a description of class Monster here.
->>>>>>> Stashed changes
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Description: Monster will move around left to right and jumping up and down, 
+ Player must avoid it. if the player's character (hero) touches the monster, 
+ the game is over and the hero will be teleported to starting point and 
+ symbols for losing will appear to taunt the player.
+ 
+ * @author: Andrew Fok
+ * @version: final
  */
 public class Monster extends Actor
 {
@@ -24,12 +23,14 @@ public class Monster extends Actor
     public void act()
     {
         // Add your action code here.
+        //Monster's movment speed is set here, adjusted for difficulty
         move(-8);
         
         if(getX() <= 0) {
             resetMonster();
         }
         
+        //Releases the taunts after player loses
         if(isTouching(Hero.class)){
             //add gameover symbols
             YouLose youLose = new YouLose();
@@ -41,6 +42,8 @@ public class Monster extends Actor
             
         }
     }
+        
+        //makes sure monster will be move up and down.
         public void resetMonster() {
             int num = Greenfoot.getRandomNumber(2);
             if(num == 0) {
@@ -50,13 +53,14 @@ public class Monster extends Actor
                 }
             }
             
-    public Monster()
-    {
-    GreenfootImage img = getImage();
-    img.scale(70, 70);
-    setImage(img);
     
-    }
+        //scales monster to needed size
+        public Monster(){
+            GreenfootImage img = getImage();
+            img.scale(70, 70);
+            setImage(img);
+    
+        }   
 }
     
 

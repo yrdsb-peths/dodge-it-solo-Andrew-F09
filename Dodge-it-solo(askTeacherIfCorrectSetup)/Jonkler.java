@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class jonkler here.
+ * Description: taunt symbol to induce rage in the player.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Andrew Fok
+ * @Version : Final
  */
 public class Jonkler extends Actor
 {
@@ -17,6 +17,8 @@ public class Jonkler extends Actor
         // Add your action code here.
         
     }
+    
+    //scales to needed size
     public Jonkler()
     {
         GreenfootImage img = getImage();
