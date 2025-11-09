@@ -24,7 +24,7 @@ public class Monster extends Actor
     public void act()
     {
         // Add your action code here.
-        move(-5);
+        move(-8);
         
         if(getX() <= 0) {
             resetMonster();
@@ -42,7 +42,14 @@ public class Monster extends Actor
                 setLocation(600, 300);
                 }
             }
+            
+    public Monster()
+    {
+    GreenfootImage img = getImage();
+    img.scale(70, 70);
+    setImage(img);
+    
+    }
 }
-        
     
 
