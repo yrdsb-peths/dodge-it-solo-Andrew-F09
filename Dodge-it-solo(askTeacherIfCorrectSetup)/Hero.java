@@ -27,10 +27,11 @@ public class Hero extends Actor
             setLocation(300, 100);
 
         }
-         if (isTouching(Monster.class))
-         {
-            setLocation(300,400);
+        
+        if(isTouching(Monster.class))
+        {
             removeTouching(Monster.class);
-         }
+            setLocation(300, 300); 
+        }
     }
 }
