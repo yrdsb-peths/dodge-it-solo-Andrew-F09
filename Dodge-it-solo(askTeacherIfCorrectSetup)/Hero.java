@@ -18,12 +18,13 @@ public class Hero extends Actor
        //Add your action code here.
        if(Greenfoot.mouseClicked(null)){
           atTop =!atTop;
-       }
-       
-       if(atTop){
-           setLocation(100,67);
+        }
+        if(atTop == true)
+        {
+          setLocation(350,250);
         } else {
-            setLocation(67,100);
+            setLocation(67,41);
+
         }
     }
         
