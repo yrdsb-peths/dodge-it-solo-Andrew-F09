@@ -38,7 +38,7 @@ public class Monster extends Actor
             getWorld().addObject(jonkler, 300, 200);
             CryingSponge cryingSponge = new CryingSponge();
             getWorld().addObject(cryingSponge, 500, 300);
-            getWorld().removeObject(this);
+            
         }
     }
         public void resetMonster() {
