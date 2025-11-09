@@ -25,6 +25,8 @@ public class MyWorld extends World
         // created monster
         Monster monster1 = new Monster();
         addObject(monster1, 67, 41);
+        
+        
 
     }
 }

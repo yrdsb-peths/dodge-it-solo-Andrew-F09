@@ -31,6 +31,13 @@ public class Monster extends Actor
         }
         
         if(isTouching(Hero.class)){
+            //add gameover symbols
+            YouLose youLose = new YouLose();
+            getWorld().addObject(youLose, 300, 300);
+            Jonkler jonkler = new Jonkler();
+            getWorld().addObject(youLose, 100, 300);
+            Crying crying = new Crying();
+            getWorld().addObject(crying, 500, 300);
             getWorld().removeObject(this);
         }
     }
