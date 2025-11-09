@@ -20,19 +20,25 @@ public class Monster extends Actor
    
         // Add your action code here.
 
-    boolean atTop = true;
+
     public void act()
     {
         // Add your action code here.
-        if(Greenfoot.mouseClicked(null)){
-          atTop =!atTop;
-       }
-       
-       if(atTop){
-           setLocation(67, 41);
-        } else {
-            setLocation(350,250);
+        move(-6);
+        
+        if(getX() <= 0) {
+            resetMonster();
         }
-
     }
+        public void resetMonster() {
+            int num = Greenfoot.getRandomNumber(2);
+            if(num == 0) {
+                setLocation(600, 100);
+            } else {
+                setLocation(600, 300);
+                }
+            }
 }
+        
+    
+
