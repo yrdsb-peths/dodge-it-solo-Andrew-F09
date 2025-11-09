@@ -14,6 +14,13 @@ public class YouLose extends Actor
      */
     public void act()
     {
-        move(-5);
+        
+    }
+    
+    public YouLose()
+    {
+        GreenfootImage img = getImage();
+        img.scale(250, 150);
+        setImage(img);
     }
 }

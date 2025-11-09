@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Crying extends Actor
+public class CryingSponge extends Actor
 {
     /**
      * Act - do whatever the crying wants to do. This method is called whenever
@@ -15,6 +15,12 @@ public class Crying extends Actor
     public void act()
     {
         // Add your action code here.
-        move(-5);
+        move(-3);
+    }
+    public CryingSponge()
+    {
+        GreenfootImage img = getImage();
+        img.scale(150, 150);
+        setImage(img);
     }
 }

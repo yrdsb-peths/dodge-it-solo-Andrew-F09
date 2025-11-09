@@ -15,6 +15,14 @@ public class Jonkler extends Actor
     public void act()
     {
         // Add your action code here.
-        move(-5);
+        
     }
+    public Jonkler()
+    {
+        GreenfootImage img = getImage();
+        img.scale(300, 100);
+        setImage(img);
+    }
+    
+    
 }
