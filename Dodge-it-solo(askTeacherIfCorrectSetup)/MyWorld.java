@@ -18,15 +18,11 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         
+        //created monster
         Hero hero1 = new Hero();
-
         addObject(hero1, 90, 67);
         
-        Monster monster67 = new Monster();
-        addObject(monster67, 67, 67);
-
-        addObject(hero1, 350, 250);
-        
+        // created monster
         Monster monster1 = new Monster();
         addObject(monster1, 67, 41);
 

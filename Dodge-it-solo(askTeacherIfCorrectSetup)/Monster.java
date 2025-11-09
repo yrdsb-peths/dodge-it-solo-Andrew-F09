@@ -24,10 +24,14 @@ public class Monster extends Actor
     public void act()
     {
         // Add your action code here.
-        move(-6);
+        move(-5);
         
         if(getX() <= 0) {
             resetMonster();
+        }
+        
+        if(isTouching(Hero.class)){
+            getWorld().removeObject(this);
         }
     }
         public void resetMonster() {
